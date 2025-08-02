@@ -19,8 +19,7 @@ body {
     background-color: var(--secondary-color);
 }
 
-header,
-main,
+header,main,
 footer {
     width: 840px;
     margin: 0 auto;
@@ -187,3 +186,126 @@ footer .socialmedia {
     display: flex;
     gap: 1rem;
 }
+
+/* contact us */
+.contact-us{
+    display: flex;
+    justify-content: center;
+    /* grid-template-columns: 3fr 1fr; */
+    /* max-width: 900px; */
+    /* justify-content: space-between; */
+}
+
+form{
+    /* width: 900px; */
+    background-color: var(--accent2-color);
+    display: grid;
+    padding: 1rem;
+    margin: 2rem .5rem;
+    border-radius: 10px;
+    border: 2px solid #000;
+    /* width: 900px; */
+    /* max-width: 900px; */
+    /* flex: 1 1 400px; */
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    padding: 1rem;
+}
+
+legend{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+input{
+    padding: 0.5rem;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+textarea{
+    width: 100%;
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+
+.column2{
+    grid-template-columns: 1fr 2fr;
+}
+
+button{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin: .2rem 2rem;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    /* width: 50%; */
+}
+
+button:hover{
+    background-color: var(--accent1-color);
+}
+
+aside{
+    /* width: 50%; */
+    margin: 2rem .5rem;  
+}
+
+aside h2{
+    text-align: center;
+}
+
+.employees {
+    flex: 1 1 400px;
+    margin: 10px;
+}
+
+.employee-list {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.employee {
+    text-align: center;
+}
+
+.aside-column2{
+    display: flex;
+}
+
+.reservations{
+    color: #fff;
+}
+
+.checkbox{
+    color: #fff;
+    font-size: 1rem;
+}
+
+.address-map{
+    display: flex;
+    padding-top: 140px;
+    /* flex: 1 1 100%; */
+    /* justify-content: space-between; */
+    margin: 0px 50px;
+}
+
+
+.map{
+    width: 50px;
+    height: 50px;
+    border: 0;
+}
+
+.company-address {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+
