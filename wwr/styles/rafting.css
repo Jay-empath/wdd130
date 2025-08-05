@@ -220,12 +220,12 @@ fieldset {
     font-size: 1.5rem;
 }
 
-/* input{
+input{
     padding: 0.5rem;
-    width: 100%;
+    /* width: 80%; */
     border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-} */
+    border-radius: 5px;
+}
 
 textarea{
     width: 100%;
