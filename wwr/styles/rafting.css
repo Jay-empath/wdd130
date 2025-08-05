@@ -236,12 +236,12 @@ textarea{
     grid-template-columns: 1fr 2fr;
 }
 
-.form-item {
+.column2 {
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
 }
-.form-item label {
+.column2 label {
     font-weight: bold;
     font-size: .9rem;
 }
