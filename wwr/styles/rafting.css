@@ -215,17 +215,18 @@ fieldset {
     padding: 1rem;
 }
 
-legend{
+.contact-form-head{
     text-align: center;
     font-size: 1.5rem;
 }
 
-input{
+/* input{
     padding: 0.5rem;
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-}
+} */
+
 textarea{
     width: 100%;
     border-radius: 8px;
@@ -293,26 +294,27 @@ aside h2{
 .reservations{
     color: #fff;
 }
-
+.reservation {
+    display: grid;
+}
+.reservation-1 input,
+.reservation-2 input {
+    margin-right: 1rem;
+}
 .checkbox{
     color: #fff;
     font-size: 1rem;
+    text-align: center;
 }
-
 .address-map{
     display: flex;
     padding-top: 140px;
+    /* max-width: 100%; */
     /* flex: 1 1 100%; */
     /* justify-content: space-between; */
-    margin: 0px 50px;
+    /* margin: 0px 50px; */
 }
 
-
-.map{
-    width: 50px;
-    height: 50px;
-    border: 0;
-}
 
 .company-address {
     flex: 1 1 300px;
