@@ -85,11 +85,11 @@ header nav a {
     font-weight: bold;
 }
 
-.hero {
+.hero, .trips-hero {
     position: relative;
 }
 
-.hero img {
+.hero img, .trips-hero img {
     display: block;
     width: 100%;
     height: auto;
@@ -258,7 +258,8 @@ button{
     /* width: 50%; */
 }
 
-button:hover{
+button:hover,
+.trips-button:hover{
     background-color: var(--accent1-color);
 }
 
@@ -330,4 +331,221 @@ aside h2{
     margin: 10px;
 }
 
+/* HOME PAGE */
+.newsletter form {
+    /* text-align: center; */
+    max-width: 50%;
+    margin: 30px 0;
+    padding: 40px;
+    border: none;
+}
+.newsletter input[type="email"],
+.newsletter input[type="text"] {
+    width: 100%;
+    margin: 25px 0;
+    padding: 15px;
+}
+h3 {
+    padding-top: 25px;
+    font-size: 20px;
+}
+.trips-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+.grid-layout img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+.grid-layout h2 {
+    font-size: 20px;
+    margin-top: 15px;
+}
 
+/* TRIPS PAGE */
+#call{
+    position: absolute;
+    top: 0;
+    left: 600px;
+    /* width: 100%; */
+    padding: 20px 10px;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    font-size: 15px;
+}
+
+#call:hover{
+    text-decoration: underline;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.cta{
+    position: absolute;
+    bottom: 100px;
+    left: 12px;
+    /* margin: 0 auto; */
+    /* top: 100px; */
+
+}
+
+.cta h1{
+    font-size: 40px;
+    text-shadow: 1px 1px 2px #000;
+    margin: 20px 0;
+}
+
+.cta p{
+    margin: 0;
+    font-size: 20px;
+    margin: 20px 0;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.cta a{
+    background-color: var(--accent2-color);
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid #000;
+    color: #000;
+    /* margin: 20px 0; */
+}
+
+#request{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+
+.trip-descriptions h2{
+    margin: 20px;
+    text-align: center;
+}
+
+.trip-grid{
+    display: flex;
+    gap: 20px;
+    /* padding: 40px; */
+    width: 100%;
+    /* background: #f8f8f8; */
+}
+
+.trip {
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    /* flex: 1; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.trip img{
+    /* width: 200px; */
+    height: 150px;
+    width: 100%;
+    border-radius: 8px;
+    /* object-fit: cover; */
+}
+.trip p{
+    margin: 15px 0;
+    padding: 5px 0;
+}
+.trip a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.trip span{
+    position: absolute;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 15px; 
+    top: 30px;
+    left: -12px;
+    border-radius: 0px 10px;
+    box-shadow:5px 5px 10px gray;
+}
+
+
+.trips-table {
+    padding: 40px;
+    background: linear-gradient(to bottom, #f8f8f813,#e3f2e9,  var(--accent2-color));
+
+}
+
+.trips-table h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: #064E9D;
+    position: relative;
+}
+
+.trips-table h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #064E9D;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.trips-table th,
+.trips-table td {
+    padding: 14px 18px;
+    text-align: center;
+}
+
+.trips-table th {
+    background: #064E9D;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.trips-table tbody tr {
+    transition: 0.3s ease, transform 0.2s ease;
+}
+
+.trips-table tbody tr:nth-child(even) {
+    background-color: #f4f8fc;
+}
+
+.trips-table tbody tr:hover {
+    background-color: #e0ecf8;
+    transform: scale(1.01);
+}
+
+.trips-table td {
+    color: #333;
+    font-size: 1em;
+}
